@@ -105,9 +105,34 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+
+//create array
+let fivesArray =[5,10,15,20,25,30,35,40,45,50]
+let emptyArray = []
+let colorArray = ['red','blue','yellow','green','purple','indigo']
+//set parameters
+
+/**
+ * 
+ * @param {*} array //Input array name
+ * @returns //The last item in an array.
+ */
+
 function getLast( array ) {
+//Define variable "last"
+  let last = (array.length - 1)
+//Get last array item
+return console.log(array[last])
 
 }
+//testing number array
+getLast(fivesArray)
+//testing empty array
+getLast(emptyArray)
+//testing string array
+getLast(colorArray)
+
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
