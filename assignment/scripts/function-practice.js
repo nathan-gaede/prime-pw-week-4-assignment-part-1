@@ -17,8 +17,8 @@ console.log(hello())
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 /**
  * 
- * @param {*} string //choose any name as a string
- * @returns {*} string
+ * @param {*} string//choose any name as a string
+ * @returns {*} string//returns console log 'Hello' "name"
  */
 
 function helloName( name ) { 
