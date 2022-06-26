@@ -70,14 +70,32 @@ multiplyThree(1.6,3.5,99.7)
 addNumbers(4,7)
 addNumbers(-9,17)
 
+
+/**
+ * 
+ * @param {*} number 
+ * @returns //True if number is positive, False if less than or equal to zero.
+ */
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
+
   if ( number > 0 ){
-    return;
+    let number = true 
+    return number;
   }
-    return;
+  else if (number <= 0){
+    let number = false;
+    return number;
+  }  
+  
 }
+isPositive(3)
+isPositive(0)
+isPositive(-3)
+
+
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
