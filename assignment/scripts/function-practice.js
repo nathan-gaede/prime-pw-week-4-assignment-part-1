@@ -51,12 +51,24 @@ addNumbers(-23,45)
 addNumbers(-23,-88)
 
 
-
+/**
+ * 
+ * @param {*} firstNumber 
+ * @param {*} secondNumber 
+ * @param {*} thirdNumber 
+ * @returns //product of multiplying firstNumber by secondNumber by thirdNumber 
+ */
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( firstNumber,secondNumber,thirdNumber ){
+let product = firstNumber * secondNumber * thirdNumber;
+return console.log(product)
 }
-
+multiplyThree(2,3,4)
+multiplyThree(3,-9,8)
+multiplyThree(1.6,3.5,99.7)
+//testing if there is a conflict in using the same variable names in two different functions.
+addNumbers(4,7)
+addNumbers(-9,17)
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
