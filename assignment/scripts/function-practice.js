@@ -26,7 +26,7 @@ function helloName( name ) {
   return console.log('Hello',name);
   
 }
-console.log(helloName('Fred'))
+(helloName('Fred'))
 
 
 
