@@ -33,12 +33,23 @@ function helloName( name ) {
 
 
 // Remember to call the function to test
-
+/**
+ * 
+ * @param {*} firstNumber 
+ * @param {*} secondNumber 
+ * @returns //the sum of the firstNumber and secondNumber
+ */
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber,secondNumber ) {
   // return firstNumber + secondNumber;
+let sum = firstNumber + secondNumber;
+return console.log(sum)
 }
+addNumbers(1,2)
+addNumbers(-23,45)
+addNumbers(-23,-88)
+
 
 
 // 4. Function to multiply three numbers & return the result
