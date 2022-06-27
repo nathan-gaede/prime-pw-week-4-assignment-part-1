@@ -85,7 +85,7 @@ function isPositive( number ) {
     return number;
   }
   else if (number <= 0){
-    let number = false;
+    let number = false
     return number;
   }  
   
@@ -110,6 +110,7 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 let fivesArray =[5,10,15,20,25,30,35,40,45,50]
 let emptyArray = []
 let colorArray = ['red','blue','yellow','green','purple','indigo']
+let singleArray = [1]
 //set parameters
 
 /**
@@ -131,16 +132,56 @@ getLast(fivesArray)
 getLast(emptyArray)
 //testing string array
 getLast(colorArray)
+//testing array with only one item
+getLast(singleArray)
 
 
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
+/**
+ * 
+ * @param {*} value //input any chosen value
+ * @param {*} array //select any existing array
+ * @returns //true or false
+ */
 function find( value, array ){
   
+
+  for (i=0; i < array.length; i ++) {
+    
+    let currentValue = array[i]
+    if (currentValue === value) {
+      return true
+    }
+  }
+  //Second for loop because the above return stopped the execution of the for loop.  Needed second for loop to prove the function
+  //could detect a false statement.
+  for (i=0; i < array.length; i ++) {
+
+  let currentValue = array[i]
+  if (currentValue !== value) {
+    return false
+  }
+}
 }
 
+//testing for false, found that this was a test for undefined.
+//Edit, after getting code to work, first example is false and second example is undefined.
+console.log(find( 'blue', fivesArray))
+console.log(find(0, emptyArray))
+
+//testing for true
+console.log(find(50, fivesArray))
+console.log(find('red', colorArray))
+console.log(find(15, fivesArray))
+
+//testing for false
+console.log(find('violet', colorArray))
+console.log(find(4, fivesArray))
+console.log(find(11, fivesArray))
 // ----------------------
 // Stretch Goals
 // ----------------------
