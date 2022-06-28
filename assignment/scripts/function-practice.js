@@ -194,12 +194,44 @@ console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
+let negativeArray = [-1,-3,-5,-7]
+let mixedArray = [1,-3,5,-7]
+/**
+ * 
+ * @param {*} array 
+ * @returns 
+ */
+function sumAll(array ) {
   let sum = 0
   // TODO: loop to add items
-  return sum;
+for (i=array.length; i = array.length; i--) {
+  sum = array.pop()+sum;
+  
+  
+   
+  
+  
+// const re = /,/g;
+// const str = array;
+// const newstr = re[Symbol.replace](str, '+');
+// console.log(newstr);
+// console.log(parseInt(newstr));
+//Would something like this work?  Just curious.
+
+
+ 
+  
+   
 }
 
+  return sum;
+}
+console.log(sumAll(fivesArray))
+console.log(sumAll(negativeArray))
+console.log(sumAll(mixedArray))
+console.log(sumAll(singleArray))
+console.log(sumAll(emptyArray))
+console.log(sumAll(colorArray))
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
