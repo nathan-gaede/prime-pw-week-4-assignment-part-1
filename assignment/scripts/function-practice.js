@@ -208,20 +208,13 @@ for (i=array.length; i = array.length; i--) {
   sum = array.pop()+sum;
   
   
-   
-  
-  
 // const re = /,/g;
 // const str = array;
 // const newstr = re[Symbol.replace](str, '+');
 // console.log(newstr);
 // console.log(parseInt(newstr));
 //Would something like this work?  Just curious.
-
-
- 
   
-   
 }
 
   return sum;
